@@ -56,8 +56,8 @@ function onOffline() {
     // alert('onOffline');
     
     //testShareSheet();
-    ref.executeScript({file: "notfound.html"});
-
+    //ref.executeScript({file: "notfound.html"});
+    window.open('notfound.html');
 }
 
 function openBrowser() {
