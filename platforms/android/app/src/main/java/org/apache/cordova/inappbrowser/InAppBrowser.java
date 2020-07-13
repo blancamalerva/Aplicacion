@@ -535,10 +535,10 @@ public class InAppBrowser extends CordovaPlugin {
             if (show != null) {
                 showLocationBar = show.booleanValue();
             }
-            Boolean zoom = features.get(ZOOM);
+            /*Boolean zoom = features.get(ZOOM);
             if (zoom != null) {
                 showZoomControls = zoom.booleanValue(false); //toolbarchange
-            } 
+            } *///toolbarchange
             Boolean hidden = features.get(HIDDEN);
             if (hidden != null) {
                 openWindowHidden = hidden.booleanValue();
