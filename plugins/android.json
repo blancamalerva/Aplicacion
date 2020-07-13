@@ -27,6 +27,9 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "io.platform.prueba"
+    },
+    "cordova-plugin-zoom-control-2": {
+      "PACKAGE_NAME": "io.platform.prueba"
     }
   },
   "dependent_plugins": {}

@@ -51,7 +51,17 @@ app.initialize();
 document.getElementById("openBrowser").addEventListener("click", openBrowser);
 
 document.addEventListener("offline", onOffline, false);
-
+document.addEventListener("zoom", zoOM, false);
+function zoOM() {
+   //enabling zoom control
+   cordova.plugins.ZoomControl.ZoomControl("false");
+   // enabling built in zoom control
+   cordova.plugins.ZoomControl.setBuiltInZoomControls("true");
+   // enabling display zoom control
+   cordova.plugins.ZoomControl.setDisplayZoomControls("false");
+   // enabling wide viewport
+   cordova.plugins.ZoomControl.setUseWideViewPort("false");
+}
 function onOffline() {
         window.open('js/notfound.html');    
 }
@@ -61,7 +71,6 @@ function openBrowser() {
    var target = '_blank';
    var options = "location=no,toolbar=no"
    var ref = cordova.InAppBrowser.open(url, target, options);
-   ref.getSettings().setDisplayZoomControls(false);
    /*ref.addEventListener('loadstart', loadstartCallback);*/
    ref.addEventListener('loadstop', loadstopCallback);
    ref.addEventListener('loadloaderror', loaderrorCallback);

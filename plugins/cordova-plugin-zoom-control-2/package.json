@@ -1,0 +1,53 @@
+{
+  "_from": "cordova-plugin-zoom-control-2",
+  "_id": "cordova-plugin-zoom-control-2@0.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-B6c2uMaGd7A1mFfosJSyftj7ONmDRulOKWDscZqBzNa9AuUJm8gC3MbMKZn143C1q41SrZ4JBCpX6e/Q4URYtg==",
+  "_location": "/cordova-plugin-zoom-control-2",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-zoom-control-2",
+    "name": "cordova-plugin-zoom-control-2",
+    "escapedName": "cordova-plugin-zoom-control-2",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-zoom-control-2/-/cordova-plugin-zoom-control-2-0.4.2.tgz",
+  "_shasum": "6063f85be601522920a38dc30612d6ece87bca8d",
+  "_spec": "cordova-plugin-zoom-control-2",
+  "_where": "/home/blancamalerva/Documents/Proyectos/Aplicacion",
+  "author": {
+    "name": "Flavien"
+  },
+  "bugs": {
+    "url": "https://github.com/ivelfan/cordova-plugin-zoom-control/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-zoom-control-2",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Plugin for enable the native zoom control on cordova",
+  "homepage": "https://github.com/ivelfan/cordova-plugin-zoom-control#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-zoom-control-2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivelfan/cordova-plugin-zoom-control.git"
+  },
+  "version": "0.4.2"
+}
