@@ -526,7 +526,7 @@ public class InAppBrowser extends CordovaPlugin {
     public String showWebPage(final String url, HashMap<String, Boolean> features) {
         // Determine if we should hide the location bar.
         showLocationBar = true;
-        showZoomControls = true;
+        showZoomControls = false; //toolbarchange
         openWindowHidden = false;
         mediaPlaybackRequiresUserGesture = false;
 
