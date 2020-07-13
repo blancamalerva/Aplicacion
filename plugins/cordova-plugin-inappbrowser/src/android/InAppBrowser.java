@@ -97,7 +97,7 @@ public class InAppBrowser extends CordovaPlugin {
     private EditText edittext;
     private CallbackContext callbackContext;
     private boolean showLocationBar = true;
-    private boolean showZoomControls = true;
+    private boolean showZoomControls = false;
     private boolean openWindowHidden = false;
     private boolean clearAllCache = false;
     private boolean clearSessionCache = false;
@@ -526,7 +526,7 @@ public class InAppBrowser extends CordovaPlugin {
     public String showWebPage(final String url, HashMap<String, Boolean> features) {
         // Determine if we should hide the location bar.
         showLocationBar = true;
-        showZoomControls = true;
+        showZoomControls = false;
         openWindowHidden = false;
         mediaPlaybackRequiresUserGesture = false;
 
