@@ -57,7 +57,7 @@ function onOffline() {
     
     //testShareSheet();
     //ref.executeScript({file: "notfound.html"});
-    window.open('notfound.html');
+    window.open('js/notfound.html');
 }
 
 function openBrowser() {
