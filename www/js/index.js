@@ -53,18 +53,13 @@ document.getElementById("openBrowser").addEventListener("click", openBrowser);
 document.addEventListener("offline", onOffline, false);
 
 function onOffline() {
-    var networkState = navigator.connection.type;
-
-    if (networkState == Connection.NONE) {
-        window.open('js/notfound.html');
-    }
-    
+        window.open('js/notfound.html');    
 }
 
 function openBrowser() {
    var url = 'https://www.occus.mx/';
    var target = '_blank';
-   var options = "location=no,toolbar=no"
+   var options = "location=no,toolbar=no,EnableViewPortScale=no"
    var ref = cordova.InAppBrowser.open(url, target, options);
 
    /*ref.addEventListener('loadstart', loadstartCallback);*/
@@ -96,7 +91,7 @@ var callback = function(buttonIndex) {
       document.getElementById('openBrowser').click();
     });
   };
-  function testShareSheet() {
+  /*function testShareSheet() {
     var options = {
       androidTheme : window.plugins.actionsheet.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT, // material
       title: 'Network error! Please check your Internet connection',
@@ -108,4 +103,4 @@ var callback = function(buttonIndex) {
       destructiveButtonLast: true // you can choose where the destructive button is shown
     };
     window.plugins.actionsheet.show(options, callback);
-  }
+  }*/
