@@ -104,7 +104,7 @@ public class InAppBrowser extends CordovaPlugin {
     private boolean hadwareBackButton = true;
     private boolean mediaPlaybackRequiresUserGesture = false;
     private boolean shouldPauseInAppBrowser = false;
-    private boolean useWideViewPort = true;
+    private boolean useWideViewPort = false;
     private ValueCallback<Uri> mUploadCallback;
     private ValueCallback<Uri[]> mUploadCallbackLollipop;
     private final static int FILECHOOSER_REQUESTCODE = 1;
