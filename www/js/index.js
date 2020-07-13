@@ -61,7 +61,7 @@ function openBrowser() {
    var target = '_blank';
    var options = "location=no,toolbar=no"
    var ref = cordova.InAppBrowser.open(url, target, options);
-
+   ref.getSettings().setDisplayZoomControls(false);
    /*ref.addEventListener('loadstart', loadstartCallback);*/
    ref.addEventListener('loadstop', loadstopCallback);
    ref.addEventListener('loadloaderror', loaderrorCallback);
