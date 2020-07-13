@@ -20,10 +20,10 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
-body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+/*body {
+    -webkit-touch-callout: none;               
+    -webkit-text-size-adjust: none;             
+    -webkit-user-select: none;            
     background-color:#E4E4E4;
     background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
@@ -31,11 +31,11 @@ body {
     height:100vh;
     margin:0px;
     padding:0px;
-    /* Padding to avoid the "unsafe" areas behind notches in the screen */
+    //Padding to avoid the "unsafe" areas behind notches in the screen
     padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-right, 0px);
     text-transform:uppercase;
     width:100%;
-}
+}*/
 
 /* Portrait layout (default) */
 .app {
@@ -61,7 +61,7 @@ body {
     }
 }
 
-h1 {
+/*h1 {
     font-size:24px;
     font-weight:normal;
     margin:0px;
@@ -73,7 +73,7 @@ h1 {
 .event {
     border-radius:4px;
     -webkit-border-radius:4px;
-    color:#FFFFFF;
+    background-image: url(./splash.png);
     font-size:12px;
     margin:0px 30px;
     padding:2px 0px;
@@ -87,7 +87,7 @@ h1 {
 .event.received {
     background-color:#4B946A;
     display:none;
-}
+}*/
 
 @keyframes fade {
     from { opacity: 1.0; }
