@@ -19,6 +19,22 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="ActionSheet">
+        <param name="ios-package" value="ActionSheet" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection" />
+    </feature>
+    <feature name="SpinnerDialog">
+        <param name="ios-package" value="CDVSpinnerDialog" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
     <name>AppPrueba</name>
     <description>
         App de prueba
@@ -26,6 +42,8 @@
     <author email="blanca.malerva@gmail.com" href="https://www.occus.mx/">
         BlancaMalerva
     </author>
+    <content src="index.html" />
+    <access origin="*" />
     <icon src="splash.png" />
     <splash src="splash.png" />
     <splash height="480" platform="ios" src="res/screen/ios/320x480.png" width="320" />
@@ -41,8 +59,6 @@
     <splash platform="android" qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
     <splash platform="android" qualifier="land-xhdpi" src="res/screen/android/screen-xhdpi-landscape.png" />
     <splash platform="android" qualifier="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
-    <content src="index.html" />
-    <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />

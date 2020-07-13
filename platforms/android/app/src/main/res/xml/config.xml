@@ -1,5 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.platform.prueba" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="ActionSheet">
+        <param name="android-package" value="nl.xservices.plugins.actionsheet.ActionSheet" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="SpinnerDialog">
+        <param name="android-package" value="hu.dpal.phonegap.plugins.SpinnerDialog" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <name>AppPrueba</name>
     <description>
         App de prueba
@@ -7,6 +27,8 @@
     <author email="blanca.malerva@gmail.com" href="https://www.occus.mx/">
         BlancaMalerva
     </author>
+    <content src="index.html" />
+    <access origin="*" />
     <icon src="splash.png" />
     <splash src="splash.png" />
     <splash height="480" platform="ios" src="res/screen/ios/320x480.png" width="320" />
@@ -22,8 +44,6 @@
     <splash platform="android" qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
     <splash platform="android" qualifier="land-xhdpi" src="res/screen/android/screen-xhdpi-landscape.png" />
     <splash platform="android" qualifier="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
-    <content src="index.html" />
-    <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />

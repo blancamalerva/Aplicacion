@@ -46,43 +46,37 @@ var app = {
 
 app.initialize();
 
+
+
 document.getElementById("openBrowser").addEventListener("click", openBrowser);
 
 document.addEventListener("offline", onOffline, false);
 
-function onOffline() { //Se ejecuta cuando no hay conexiè´¸n a internet.
-    // alert('onOffline');
-    //testShareSheet();
-    //window.resolveLocalFileSystemURI("exit.html", true);
-    console.log('Se requiere una conexión a internet');
+function onOffline() {
+    var networkState = navigator.connection.type;
+
+    if (networkState == Connection.NONE) {
+        window.open('js/notfound.html');
+    }
+    
 }
 
 function openBrowser() {
    var url = 'https://www.occus.mx/';
-   var target = '_self';
+   var target = '_blank';
    var options = "location=no,toolbar=no"
    var ref = cordova.InAppBrowser.open(url, target, options);
 
-   ref.addEventListener('loadstart', loadstartCallback);
-   /*ref.addEventListener("loadstart", function () {
-        ref.executeScript(
-           // { code: "document.body.style.backgroundColor = 'yellow';" },
-              { code: "document.body.style.background = 'url(splash.png)';" },
-        );
-    });*/
+   /*ref.addEventListener('loadstart', loadstartCallback);*/
    ref.addEventListener('loadstop', loadstopCallback);
    ref.addEventListener('loadloaderror', loaderrorCallback);
    ref.addEventListener('exit', exitCallback);
 
-
-
-   function loadstartCallback(event) {
-        ref.executeScript(
-              { code: "document.body.style.background = 'url(splash.png)';" },
-        );
+   /*function loadstartCallback(event) {
      //window.plugins.spinnerDialog.show();
-   }
- 
+       navigator.splashscreen.show();
+   }*/
+
    function loadstopCallback(event) {
       window.plugins.spinnerDialog.hide();
    }
@@ -93,7 +87,6 @@ function openBrowser() {
 
    function exitCallback() {
       console.log('Browser is closed...')
-
    }
 }
 
@@ -103,10 +96,7 @@ var callback = function(buttonIndex) {
       document.getElementById('openBrowser').click();
     });
   };
-
-
-  /*function testShareSheet() {
-    window.open(url='exit.html');
+  function testShareSheet() {
     var options = {
       androidTheme : window.plugins.actionsheet.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT, // material
       title: 'Network error! Please check your Internet connection',
@@ -118,4 +108,4 @@ var callback = function(buttonIndex) {
       destructiveButtonLast: true // you can choose where the destructive button is shown
     };
     window.plugins.actionsheet.show(options, callback);
-  }*/
+  }

@@ -1,0 +1,33 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-actionsheet": {
+      "PACKAGE_NAME": "io.platform.prueba"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "io.platform.prueba"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "io.platform.prueba"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "io.platform.prueba"
+    },
+    "cordova-plugin-spinner-dialog": {
+      "PACKAGE_NAME": "io.platform.prueba"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.platform.prueba"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.platform.prueba"
+    }
+  },
+  "dependent_plugins": {}
+}
