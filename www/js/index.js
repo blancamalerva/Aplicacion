@@ -54,16 +54,19 @@ document.addEventListener("offline", onOffline, false);
 
 function onOffline() {
     // alert('onOffline');
-    testShareSheet();
+    
+    //testShareSheet();
+    ref.executeScript({file: "notfound.html"});
+
 }
 
 function openBrowser() {
    var url = 'https://www.occus.mx/';
-   var target = '_self';
+   var target = '_blank';
    var options = "location=no,toolbar=no"
    var ref = cordova.InAppBrowser.open(url, target, options);
 
-   ref.addEventListener('loadstart', loadstartCallback);
+   /*ref.addEventListener('loadstart', loadstartCallback);*/
    ref.addEventListener('loadstop', loadstopCallback);
    ref.addEventListener('loadloaderror', loaderrorCallback);
    ref.addEventListener('exit', exitCallback);
