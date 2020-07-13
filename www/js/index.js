@@ -51,19 +51,21 @@ app.initialize();
 document.getElementById("openBrowser").addEventListener("click", openBrowser);
 
 document.addEventListener("offline", onOffline, false);
-document.addEventListener("zoom", zoOM, false);
-function zoOM() {
-   //enabling zoom control
-   cordova.plugins.ZoomControl.ZoomControl("false");
-   // enabling built in zoom control
-   cordova.plugins.ZoomControl.setBuiltInZoomControls("true");
-   // enabling display zoom control
-   cordova.plugins.ZoomControl.setDisplayZoomControls("false");
-   // enabling wide viewport
-   cordova.plugins.ZoomControl.setUseWideViewPort("true");
-}
+document.addEventListener("zoom", zoOM, true);
+
 function onOffline() {
         window.open('js/notfound.html');    
+}
+
+function zoOM() {
+  //enabling zoom control
+  cordova.plugins.ZoomControl.ZoomControl("false");
+  // enabling built in zoom control
+  cordova.plugins.ZoomControl.setBuiltInZoomControls("false");
+  // enabling display zoom control
+  cordova.plugins.ZoomControl.setDisplayZoomControls("false");
+  // enabling wide viewport
+  cordova.plugins.ZoomControl.setUseWideViewPort("true");
 }
 
 function openBrowser() {
