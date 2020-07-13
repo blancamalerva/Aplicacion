@@ -174,7 +174,7 @@ public class NetworkManager extends CordovaPlugin {
                         try {
                             connectionType = NetworkManager.this.lastInfo.get("type").toString();
                         } catch (JSONException e) {
-                            LOG.d(LOG_TAG, e.getLocalizedMessage());
+                            //LOG.d(LOG_TAG, e.getLocalizedMessage());
                             connectionType = TYPE_NONE;
                         }
                     }
@@ -225,7 +225,7 @@ public class NetworkManager extends CordovaPlugin {
             try {
                 connectionType = thisInfo.get("type").toString();
             } catch (JSONException e) {
-                LOG.d(LOG_TAG, e.getLocalizedMessage());
+                //LOG.d(LOG_TAG, e.getLocalizedMessage());
             }
 
             sendUpdate(connectionType);
@@ -250,7 +250,7 @@ public class NetworkManager extends CordovaPlugin {
             else {
                 type = getType(info);
             }
-            extraInfo = info.getExtraInfo();
+            //extraInfo = info.getExtraInfo();
         }
 
         LOG.d(LOG_TAG, "Connection Type: " + type);
@@ -262,7 +262,7 @@ public class NetworkManager extends CordovaPlugin {
             connectionInfo.put("type", type);
             connectionInfo.put("extraInfo", extraInfo);
         } catch (JSONException e) {
-            LOG.d(LOG_TAG, e.getLocalizedMessage());
+            //LOG.d(LOG_TAG, e.getLocalizedMessage());
         }
 
         return connectionInfo;
