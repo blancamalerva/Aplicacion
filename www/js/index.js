@@ -60,7 +60,7 @@ function zoOM() {
    // enabling display zoom control
    cordova.plugins.ZoomControl.setDisplayZoomControls("false");
    // enabling wide viewport
-   cordova.plugins.ZoomControl.setUseWideViewPort("false");
+   cordova.plugins.ZoomControl.setUseWideViewPort("true");
 }
 function onOffline() {
         window.open('js/notfound.html');    
