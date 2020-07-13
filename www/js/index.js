@@ -59,7 +59,7 @@ function onOffline() {
 
 function openBrowser() {
    var url = 'https://www.occus.mx/';
-   var target = '_blank';
+   var target = '_self';
    var options = "location=no,toolbar=no"
    var ref = cordova.InAppBrowser.open(url, target, options);
 
@@ -68,10 +68,10 @@ function openBrowser() {
    ref.addEventListener('loadloaderror', loaderrorCallback);
    ref.addEventListener('exit', exitCallback);
 
-   function loadstartCallback(event) {
+   /*function loadstartCallback(event) {
      //window.plugins.spinnerDialog.show();
        navigator.splashscreen.show();
-   }
+   }*/
 
    function loadstopCallback(event) {
       window.plugins.spinnerDialog.hide();
