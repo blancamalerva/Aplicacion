@@ -50,16 +50,16 @@ document.getElementById("openBrowser").addEventListener("click", openBrowser);
 
 document.addEventListener("offline", onOffline, false);
 
-function onOffline() { //Se ejecuta cuando no hay conexi贸n a internet.
+function onOffline() { //Se ejecuta cuando no hay conexiè´¸n a internet.
     // alert('onOffline');
     //testShareSheet();
     //window.resolveLocalFileSystemURI("exit.html", true);
-    console.log('Se requiere una conexi�n a internet');
+    console.log('Se requiere una conexión a internet');
 }
 
 function openBrowser() {
    var url = 'https://www.occus.mx/';
-   var target = '_self';
+   var target = '_blank';
    var options = "location=no,toolbar=no"
    var ref = cordova.InAppBrowser.open(url, target, options);
 
