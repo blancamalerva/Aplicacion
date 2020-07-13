@@ -53,11 +53,12 @@ document.getElementById("openBrowser").addEventListener("click", openBrowser);
 document.addEventListener("offline", onOffline, false);
 
 function onOffline() {
-    // alert('onOffline');
+    var networkState = navigator.connection.type;
+
+    if (networkState == Connection.NONE) {
+        window.open('js/notfound.html');
+    }
     
-    //testShareSheet();
-    //ref.executeScript({file: "notfound.html"});
-    window.open('js/notfound.html');
 }
 
 function openBrowser() {
