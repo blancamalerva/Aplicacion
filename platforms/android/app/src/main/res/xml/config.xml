@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.platform.prueba" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="ActionSheet">
+        <param name="android-package" value="nl.xservices.plugins.actionsheet.ActionSheet" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="SpinnerDialog">
+        <param name="android-package" value="hu.dpal.phonegap.plugins.SpinnerDialog" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>AppPrueba</name>
+    <description>
+        App de prueba
+    </description>
+    <author email="blanca.malerva@gmail.com" href="https://www.occus.mx/">
+        BlancaMalerva
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <icon src="splash.png" />
+    <splash src="splash.png" />
+    <splash height="480" platform="ios" src="res/screen/ios/320x480.png" width="320" />
+    <splash height="960" platform="ios" src="res/screen/ios/640x960.png" width="640" />
+    <splash height="1136" platform="ios" src="res/screen/ios/640x1136.png" width="640" />
+    <splash height="1004" platform="ios" src="res/screen/ios/768x1004.png" width="768" />
+    <splash height="2008" platform="ios" src="res/screen/ios/1536x2008.png" width="1536" />
+    <splash platform="android" qualifier="land-hdpi" src="res/screen/android/screen-hdpi-landscape.png" />
+    <splash platform="android" qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
+    <splash platform="android" qualifier="land-ldpi" src="res/screen/android/screen-ldpi-landscape.png" />
+    <splash platform="android" qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
+    <splash platform="android" qualifier="land-mdpi" src="res/screen/android/screen-mdpi-landscape.png" />
+    <splash platform="android" qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
+    <splash platform="android" qualifier="land-xhdpi" src="res/screen/android/screen-xhdpi-landscape.png" />
+    <splash platform="android" qualifier="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+</widget>
