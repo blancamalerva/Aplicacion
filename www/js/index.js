@@ -58,7 +58,7 @@ function onOffline() {
 }
 
 function openBrowser() {
-   var url = 'https://cordova.apache.org/';
+   var url = 'https://www.occus.mx/';
    var target = '_blank';
    var options = "location=no,toolbar=no"
    var ref = cordova.InAppBrowser.open(url, target, options);
@@ -69,7 +69,8 @@ function openBrowser() {
    ref.addEventListener('exit', exitCallback);
 
    function loadstartCallback(event) {
-     window.plugins.spinnerDialog.show();
+     //window.plugins.spinnerDialog.show();
+       navigator.splashscreen.show();
    }
 
    function loadstopCallback(event) {
