@@ -51,7 +51,6 @@ app.initialize();
 document.getElementById("openBrowser").addEventListener("click", openBrowser);
 
 document.addEventListener("offline", onOffline, false);
-document.addEventListener("zoom", zoOM, true);
 
 function onOffline() {
         window.open('js/notfound.html');
@@ -68,7 +67,7 @@ function openBrowser() {
    /*ref.addEventListener('loadstart', loadstartCallback);*/
    ref.addEventListener('loadstop', loadstopCallback);
    ref.addEventListener('loadloaderror', loaderrorCallback);
-   ref.addEventListener('exit', exitCallback);
+  //  ref.addEventListener('exit', exitCallback);
 
    /*function loadstartCallback(event) {
      //window.plugins.spinnerDialog.show();
@@ -83,10 +82,10 @@ function openBrowser() {
       testShareSheet();
    }
 
-   function exitCallback() {
+   /*function exitCallback() {
       //console.log('Browser is closed...')
       window.close('');
-   }
+   }*/
 }
 
 
