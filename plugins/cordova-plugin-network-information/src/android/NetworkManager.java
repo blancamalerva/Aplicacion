@@ -98,7 +98,7 @@ public class NetworkManager extends CordovaPlugin {
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
         this.sockMan = (ConnectivityManager) cordova.getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
-        //this.connectionCallbackContext = null;
+        this.connectionCallbackContext = null;
 
         this.registerConnectivityActionReceiver();
     }

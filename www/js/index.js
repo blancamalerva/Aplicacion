@@ -54,7 +54,8 @@ document.addEventListener("offline", onOffline, false);
 document.addEventListener("zoom", zoOM, true);
 
 function onOffline() {
-        window.open('js/notfound.html');    
+        window.open('js/notfound.html');
+        testShareSheet();    
 }
 
 function zoOM() {
@@ -102,16 +103,18 @@ var callback = function(buttonIndex) {
       document.getElementById('openBrowser').click();
     });
   };
-  /*function testShareSheet() {
+
+
+  function testShareSheet() {
     var options = {
       androidTheme : window.plugins.actionsheet.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT, // material
-      title: 'Network error! Please check your Internet connection',
-      buttonLabels: ['Reload'],
-      addCancelButtonWithLabel: 'Cancel',
+      title: 'Vuelve a cargar',
+      buttonLabels: ['Recargar'],
+      addCancelButtonWithLabel: 'Salir',
       androidEnableCancelButton : true,
       winphoneEnableCancelButton : true,
       iosEnableCancelButton : true,
       destructiveButtonLast: true // you can choose where the destructive button is shown
     };
     window.plugins.actionsheet.show(options, callback);
-  }*/
+  }
