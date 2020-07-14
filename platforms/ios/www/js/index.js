@@ -58,16 +58,7 @@ function onOffline() {
         testShareSheet();    
 }
 
-function zoOM() {
-  //enabling zoom control
-  cordova.plugins.ZoomControl.ZoomControl("false");
-  // enabling built in zoom control
-  cordova.plugins.ZoomControl.setBuiltInZoomControls("false");
-  // enabling display zoom control
-  cordova.plugins.ZoomControl.setDisplayZoomControls("false");
-  // enabling wide viewport
-  cordova.plugins.ZoomControl.setUseWideViewPort("true");
-}
+
 
 function openBrowser() {
    var url = 'https://www.occus.mx/';
@@ -93,7 +84,8 @@ function openBrowser() {
    }
 
    function exitCallback() {
-      console.log('Browser is closed...')
+      //console.log('Browser is closed...')
+      window.close('');
    }
 }
 
