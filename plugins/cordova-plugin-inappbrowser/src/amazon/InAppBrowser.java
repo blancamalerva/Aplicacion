@@ -90,7 +90,7 @@ public class InAppBrowser extends CordovaPlugin {
     private AmazonWebView inAppWebView;
     private EditText edittext;
     private CallbackContext callbackContext;
-    private boolean showLocationBar = true;
+    private boolean showLocationBar = false;
     private boolean showZoomControls = false;
     private boolean openWindowHidden = false;
     private boolean clearAllCache= false;
@@ -471,7 +471,7 @@ public class InAppBrowser extends CordovaPlugin {
      */
     public String showWebPage(final String url, HashMap<String, Boolean> features) {
         // Determine if we should hide the location bar.
-        showLocationBar = true;
+        showLocationBar = false;
         showZoomControls = false;
         openWindowHidden = false;
         if (features != null) {
@@ -656,7 +656,7 @@ public class InAppBrowser extends CordovaPlugin {
                 AmazonWebSettings settings = inAppWebView.getSettings();
                 settings.setJavaScriptEnabled(true);
                 settings.setJavaScriptCanOpenWindowsAutomatically(true);
-                settings.setBuiltInZoomControls(getShowZoomControls());
+                // settings.setBuiltInZoomControls(getShowZoomControls());
                 settings.setPluginState(com.amazon.android.webkit.AmazonWebSettings.PluginState.ON);
 
                 //Toggle whether this is enabled or not!
