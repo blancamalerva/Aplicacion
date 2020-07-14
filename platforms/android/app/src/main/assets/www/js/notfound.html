@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Security-Policy" content="img-src * 'self' data:; default-src * 'self' gap: wss: ws: ; style-src 'self' 'unsafe-inline'; script-src 'self' https://dusthqdenevents.frb.io/ 'unsafe-inline' 'unsafe-eval';">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>NOTFOUND</title>
-    </head>
-    <body>
-        <div>
-            <p>Paǵina en reparación</p>
+
+<head>
+    <meta http-equiv="Content-Security-Policy"
+        content="img-src * 'self' data:; default-src * 'self' gap: wss: ws: ; style-src 'self' 'unsafe-inline'; script-src 'self' https://dusthqdenevents.frb.io/ 'unsafe-inline' 'unsafe-eval';">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>NOTFOUND</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .div-principal {
+            display: inline-flex;
+            padding-top: 80px;
+            position: relative;
+            /*left: 30%;*/
+        }
+
+        .divcolor {
+            background-color: chocolate;
+            border-radius: 8px;
+            text-align: center;
+            height: 50%;
+            width: 100%;
+            padding: 1%;
+            /* display: inline; */
+            /* height: 80px;
+            width: 130px; */
+
+        }
+
+        .title {
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        hr{
+            width: 38%;
+        }
+
+    </style>
+    <div class="div-principal">
+        <div class="divcolor">
+            <p class="title">Está página requiere conexión a Internet</p>
+            <hr>
+            <p class="title">Disculpe las molestias.</p>
         </div>
-        <!---<script type="text/javascript">
+    </div>
+    <!---<script type="text/javascript">
             navigator.splashscreen.show(); 
         </script> 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>--->
-    </body>
+</body>
+
 </html>

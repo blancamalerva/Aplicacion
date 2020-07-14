@@ -71,7 +71,7 @@ function zoOM() {
 function openBrowser() {
    var url = 'https://www.occus.mx/';
    var target = '_blank';
-   var options = "location=no,toolbar=no"
+   var options = "location=no,toolbar=no, zoom=no"
    var ref = cordova.InAppBrowser.open(url, target, options);
    /*ref.addEventListener('loadstart', loadstartCallback);*/
    ref.addEventListener('loadstop', loadstopCallback);
